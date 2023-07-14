@@ -1,1 +1,115 @@
-* { padding: 0; margin: 0; box-sizing: border-box; outline: none; transition: 0.2s; text-transform: capitalize; overflow: hidden; } body { background-image: linear-gradient( to right bottom, #068fff, #0a81fd, #2372f9, #3962f3, #4e4feb ); background-repeat: no-repeat; } html { font-size: 16px; } .parent { flex-direction: column; height: 100vh; display: flex; justify-content: center; align-items: center; } .img { height: 10rem; width: auto; border-radius: 20px; margin: 1rem; } #logo { user-select: none; } input { height: 3rem; width: 30rem; border: none; border-radius: 10px; margin: 1rem; overflow-x: scroll; } input[type="text"] { padding: 1rem; } .btn { height: 3rem; width: 16rem; border: none; border-radius: 10px; background: #1c2dff; display: flex; justify-content: center; align-items: center; } .btn:hover { background: #f77754; cursor: pointer; box-shadow: 0px 11px 11px 1px #f77754; } .img_btn { height: 2rem; animation: img_btn 2s infinite; translate: 0px -50px; } @keyframes img_btn { to { translate: 0px 50px; } } .download_text { padding: 1rem; font-family: system-ui; font-size: 1.5rem; } .mover { height: 100vh; position: absolute; z-index: -1; } .vid_icon { height: 12rem; animation: vid 20s infinite; } @keyframes vid { to { rotate: 360deg; } } @media only screen and (max-width: 425px) { html { font-size: 10px; } } @media only screen and (min-width: 426px) and (max-width: 768px) { html { font-size: 14px; } } @media only screen and (min-width: 1440px) { html { font-size: 17px; } } @media only screen and (min-width: 1744px) { html { font-size: 17px; } } @media only screen and (min-width: 2120px) { html { font-size: 22px; } }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.2s;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+body {
+  background: url(./blob-scene-haikei.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+html {
+  font-size: 16px;
+}
+.parent {
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  height: 10rem;
+  width: auto;
+  border-radius: 20px;
+  margin: 1rem;
+}
+#logo {
+  user-select: none;
+}
+input {
+  height: 3rem;
+  width: 30rem;
+  border: none;
+  border-radius: 10px;
+  margin: 1rem;
+  overflow-x: scroll;
+}
+input[type="text"] {
+  padding: 1rem;
+}
+.btn {
+  height: 4rem;
+  width: 22rem;
+  border: none;
+  border-radius: 10px;
+  background: #1c2dff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 7px 7px #1c2dff;
+}
+.img_btn {
+  height: 2rem;
+  animation: img_btn 2s infinite;
+  translate: 0px -50px;
+}
+@keyframes img_btn {
+  to {
+    translate: 0px 50px;
+  }
+}
+.download_text {
+  padding: 1rem;
+  font-family: system-ui;
+  font-size: 1.5rem;
+}
+.mover {
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+.vid_icon {
+  height: 12rem;
+  animation: vid 20s infinite;
+}
+@keyframes vid {
+  to {
+    rotate: 360deg;
+  }
+}
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1744px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 2120px) {
+  html {
+    font-size: 22px;
+  }
+}
